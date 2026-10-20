@@ -1,0 +1,81 @@
+# ============================================================
+# Healthy Beans — .gitignore
+# Python / TensorFlow / VS Code project
+# ============================================================
+
+# ---------- Python ----------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments (never commit these)
+.venv/
+venv/
+env/
+ENV/
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+
+# ---------- Machine learning artifacts ----------
+# Trained models and checkpoints are regenerated at runtime.
+# The models/ folder itself is kept (see models/.gitkeep).
+*.h5
+*.hdf5
+*.keras
+*.tflite
+*.pb
+*.pbtxt
+*.onnx
+*.ckpt
+*.ckpt.*
+checkpoint
+models/*/
+
+# ---------- Dataset files ----------
+# Raw image datasets are large and should be distributed separately,
+# not committed to version control.
+dataset/
+Classification/
+
+# ---------- VS Code / IDE ----------
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+
+# ---------- Jupyter (not used in this project, kept as a safeguard) ----------
+.ipynb_checkpoints/
+
+# ---------- Environment / secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Operating system ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+#files
+/dataset/
+/models/*.pth
+/error_analysis/

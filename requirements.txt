@@ -1,0 +1,17 @@
+# Healthy Beans - Phase 1 Dependencies
+# Python 3.14
+# Machine Learning: PyTorch
+
+numpy
+pandas
+opencv-python
+pillow
+matplotlib
+scikit-learn
+
+# Deep Learning
+torch
+torchvision
+
+# Progress bars
+tqdm
